@@ -230,6 +230,7 @@ article img {
     
     .content {
         width: 100%;
+        margin: 0 auto 0 auto;
     }
     
     .content p,h1,h2 {
