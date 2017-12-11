@@ -114,7 +114,7 @@ nav a:hover::after {
 
 .content {
     width: 700px;
-    margin: 64px auto 0 auto;
+    margin: 26px auto 0 auto;
 }
 
 img {
@@ -180,8 +180,9 @@ section .overlay p {
     transition: width 400ms;
 }
 
-article h1 {
+article {
     margin-top: -8px;
+    display: inline-block;
 }
 
 article h1 .link {
@@ -219,7 +220,7 @@ article .link {
     font-size: 13px;
     line-height: 22px;
     letter-spacing: 0.3px;
-    margin: 0 0;
+    margin: 10px 0;
 }
 
 article .link::after {
@@ -236,6 +237,24 @@ article .link:hover::after {
     width: 100%;
         -webkit-transition: width 400ms;
     transition: width 400ms;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 26px;
+    margin-bottom: 0;
+    display: inline;
+    clear: both;
+    float: left;
+}
+
+article li {
+    padding: 8px 0;
+    width: 100%;
+    display: inline;
+    clear: both;
+    float: left;
 }
 
 @media only screen and (max-width: 900px) {
