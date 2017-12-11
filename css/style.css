@@ -114,7 +114,7 @@ nav a:hover::after {
 
 .content {
     width: 700px;
-    margin: 26px auto 0 auto;
+    margin: 40px auto 0 auto;
 }
 
 img {
@@ -244,8 +244,8 @@ article ul {
     padding: 0;
     margin-top: 26px;
     margin-bottom: 0;
+    width: 50%;
     display: inline;
-    clear: both;
     float: left;
 }
 
@@ -296,6 +296,20 @@ article li {
     
     section:last-of-type {
         margin-bottom: 0;
+    }
+    
+    article ul {
+        clear: both;
+        width: 100%;
+    }
+    
+    .module {
+        background-color: #1d1d1d;  
+        padding: 50px 0;
+    }
+    
+    .module h1 {
+        color: white;
     }
     
 }
