@@ -185,6 +185,13 @@ article {
     display: inline-block;
 }
 
+.module {
+    background-color: none;  
+    margin-bottom: 40px;
+    padding: 0;
+        
+}
+
 article h1 .link {
     width: 12px;
     margin: -6px -6px -6px 0;
@@ -242,8 +249,7 @@ article .link:hover::after {
 article ul {
     list-style: none;
     padding: 0;
-    margin-top: 26px;
-    margin-bottom: 0;
+    margin: 20px 0;
     width: 50%;
     display: inline;
     float: left;
@@ -292,6 +298,10 @@ article li {
     
     section .overlay {
         border-radius: 0;
+    }
+    
+    section .overlay.tease {
+        opacity: 0.94;
     }
     
     section:last-of-type {
