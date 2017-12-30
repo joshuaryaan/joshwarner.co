@@ -31,6 +31,28 @@ p {
     margin: 0;
 }
 
+.button {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: #231f20;
+    border: solid 1px #2d2d2d;
+    padding: 10px 30px;
+    display: inline;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.button:active {
+    background-color: #2d2d2d;
+    color: white;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -114,7 +136,7 @@ nav a:hover::after {
 
 .content {
     width: 700px;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 24px auto;
 }
 
 img {
@@ -131,7 +153,7 @@ section {
 }
 
 section:last-of-type {
-    margin-bottom: 24px;
+    margin-bottom: 0;
 }
 
 section .overlay {
@@ -291,6 +313,10 @@ article li {
         box-sizing: border-box;
     }
     
+    article .button {
+        margin-left: 30px
+    }
+    
     section {
         margin-bottom: 0;
         border-radius: 0;
@@ -320,6 +346,18 @@ article li {
     
     .module h1 {
         color: white;
+    }
+    
+    .module * {
+        margin: 25px 0;
+    }
+    
+    .module *:first-child {
+        margin-top: 0;
+    }
+    
+    .module *:last-child {
+        margin-bottom: 0;
     }
     
 }
