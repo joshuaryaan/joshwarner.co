@@ -352,7 +352,7 @@ article ul.full li {
         margin-bottom: 0;
     }
     
-    article ul {
+    article ul, article ul.half, article ul.full {
         clear: both;
         width: 100%;
     }
@@ -376,6 +376,12 @@ article ul.full li {
     
     .module *:last-child {
         margin-bottom: 0;
+    }
+
+    article ul.full li {
+        display: inline;
+        clear: both;
+        float: left;
     }
     
 }
