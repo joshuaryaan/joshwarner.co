@@ -39,8 +39,9 @@ p {
     color: #231f20;
     border: solid 1px #2d2d2d;
     padding: 10px 30px;
-    display: inline;
     text-decoration: none;
+    display: inline-block;
+    margin: 2px 20px 2px 0;
 }
 
 .button:hover {
@@ -94,7 +95,8 @@ header nav a {
     font-weight: 300;
     text-decoration: none;
     color: inherit;
-    padding: 11px 0;
+    padding: 10px 0;
+    margin: 2px 0;
 }
 
 nav a {
@@ -136,12 +138,13 @@ nav a:hover::after {
 
 .content {
     width: 700px;
-    margin: 40px auto 24px auto;
+    margin: 66px auto 24px auto;
 }
 
 img {
     display:block;
     width: 100%;
+    min-height: 200px;
     background-color: #eaeaea;
 }
 
@@ -184,6 +187,7 @@ section .overlay p {
     position: absolute;
     color: #808080;
     bottom: 30px;
+    cursor: pointer;
 }
 
 .overlay p::after {
@@ -272,17 +276,31 @@ article ul {
     list-style: none;
     padding: 0;
     margin: 20px 0;
-    width: 50%;
-    display: inline;
     float: left;
+}
+
+article ul.half {
+    width: 50%;
+}
+
+article ul.full {
+    width: 100%;
+    margin-bottom: 0; /* specific use - last on about.html */
 }
 
 article li {
     padding: 8px 0;
     width: 100%;
+}
+
+article ul.half li {
     display: inline;
     clear: both;
     float: left;
+}
+
+article ul.full li {
+    display: inline;
 }
 
 @media only screen and (max-width: 900px) {
