@@ -23,7 +23,8 @@ $(document).ready(function() {
 
 $(function(){  // $(document).ready shorthand
     $('section').css( "opacity", "0" );
-    $('section:first-of-type').css( "opacity", "1" ); //Replace this line with 'if element above fold'
+    $('section:nth-of-type(1)').css( "opacity", "1" ); //Replace this line with 'if element above fold'
+    $('section:nth-of-type(2)').css( "opacity", "1" );
 });
 
 //Anna Larson - https://codepen.io/annalarson/pen/GesqK
