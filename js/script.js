@@ -18,37 +18,25 @@ $(document).ready(function() {
     $("nav a").on("touchend", function(event) {
       window.location.href = $(this).attr("href");
     });
-     
-});
 
-$(function(){  // $(document).ready shorthand
+    //Hide all sections except the top two
     $('section').css( "opacity", "0" );
     $('section:nth-of-type(1)').css( "opacity", "1" ); //Replace this line with 'if element above fold'
     $('section:nth-of-type(2)').css( "opacity", "1" );
-});
-
-//Anna Larson - https://codepen.io/annalarson/pen/GesqK
-$(document).ready(function() {
     
-    /* Every time the window is scrolled ... */
+    //Fade in on scroll
+    //Credit to Anna Larson - https://codepen.io/annalarson/pen/GesqK
+    //Edited by Josh Warner
     $(window).scroll( function(){
-    
         /* Check the location of each desired element */
         $('section').each( function(i){
-            
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var middle_of_object = $(this).position().top + $(this).outerHeight()/2;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},1500);
-                    
+            /* If the object is half visible in the window, fade it it */
+            if( bottom_of_window > middle_of_object ){ 
+                $(this).animate({'opacity':'1'},1500);  
             }
-            
         }); 
-    
     });
-    
+    // End credit
 });
-// End credit
