@@ -101,7 +101,7 @@ header nav a {
 
 nav a {
     display: inline-block;
-    color: #000;
+    color: #2d2d2d;
     text-decoration: none;
 }
 
@@ -110,7 +110,8 @@ nav a::after {
     display: block;
     width: 0;
     height: 1px;
-    background: #000;
+    margin-top: 1px;
+    background: #2d2d2d;
         -webkit-transition: width 400ms;
     transition: width 400ms;
 }
@@ -308,6 +309,10 @@ article ul.full li {
     header {
         position: static;
         display: inline-block;
+        width: 100%;
+    }
+    
+    nav a::after {
         width: 100%;
     }
     
