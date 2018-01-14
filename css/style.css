@@ -31,17 +31,25 @@ p {
     margin: 0;
 }
 
+a, a:visited {
+    color: #5a7d3d;
+}
+
 .button {
     font-size: 13px;
     font-weight: 300;
     line-height: 1.8;
     letter-spacing: 1px;
-    color: #231f20;
+    color: inherit;
     border: solid 1px #2d2d2d;
     padding: 8px 20px;
     text-decoration: none;
     display: inline-block;
     margin: 6px 20px 6px 0;
+}
+
+.button:visited {
+    color: inherit;
 }
 
 .button:hover {
@@ -97,6 +105,10 @@ header nav a {
     color: inherit;
     padding: 10px 0;
     margin: 2px 0;
+}
+
+header nav a:visited {
+    color: inherit;
 }
 
 nav a {
