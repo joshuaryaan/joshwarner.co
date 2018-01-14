@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
+    //Tease image overlay for 1sec after page load
     setTimeout(function(){
         $("section .overlay").removeClass("tease");
     }, 1000);
     
+    //Incase timer fails, remove tease after scroll event
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10) {
             $("section .overlay").removeClass("tease");    
