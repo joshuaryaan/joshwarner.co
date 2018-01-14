@@ -1,8 +1,12 @@
 $(document).ready(function() {
 
+    setTimeout(function(){
+        $("section .overlay").removeClass("tease");
+    }, 1000);
+    
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10) {
-            $("section .overlay").removeClass("tease");;    
+            $("section .overlay").removeClass("tease");    
         }
     });
     
