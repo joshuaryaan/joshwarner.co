@@ -172,7 +172,7 @@ nav a:hover::after {
 img {
     display:block;
     width: 100%;
-    min-height: 200px;
+    min-height: 160px;
     background-color: #eaeaea;
 }
 
