@@ -35,6 +35,21 @@ a, a:visited {
     color: #5a7d3d;
 }
 
+::-moz-selection {
+    color: inherit;
+    background: rgba(98, 123, 73, 0.6);
+}
+
+::selection {
+    color: inherit; 
+    background: rgba(98, 123, 73, 0.6);
+}
+
+img {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
 .button {
     font-size: 13px;
     font-weight: 300;
@@ -157,7 +172,7 @@ nav a:hover::after {
 img {
     display:block;
     width: 100%;
-    min-height: 100px;
+    min-height: 200px;
     background-color: #eaeaea;
 }
 
@@ -252,7 +267,6 @@ article .intro {
 }
 
 article p {
-    display: inline-block;
     margin-bottom: 20px;
 }
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Josh Warner | Next.</title>
+    <meta name="keywords" content="Web, Design, Designer, Develop, Developer, Front end, Frontend, HTML, CSS, jQuery, Freelance, Wellington, New Zealand, Josh, Warner, Josh Warner, Victoria University, Graduate">
+    <meta name="description" content="Next. is a playlist generator designed to take the stress away from choosing the right song. An intentionally paired back interface presents the viewer with a balance of control and restraint.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260 260" enable-background="new 0 0 260 260" xml:space="preserve">
+            <path d="M130,0C58.203,0,0,58.203,0,130s58.203,130,130,130s130-58.203,130-130S201.797,0,130,0z M27,130
+                C27,73.206,73.206,27,130,27c9.201,0,18.121,1.22,26.614,3.494L78.454,219.146C47.716,201.304,27,168.026,27,130z"/>
+            </svg>
+        </a>
+        <nav>
+            <a href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="mailto:hello@joshwarner.co?Subject=" target="_top">Contact</a>
+        </nav>
+    </header>
+    
+    <p class="credit">Designed and developed by Josh Warner</p>
+    
+    <div class="contentContainer">  
+        <div class="content">
+
+            <article>
+                <h1>
+                    Next. Music Player
+                    <a href="https://joshuaryaan.github.io/Next./" target="_blank">
+                        <svg class="link" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260 260" enable-background="new 0 0 260 260" xml:space="preserve">
+                        <g>
+                            <path fill="#231F20" d="M223.012,258.874H23.313c-12.237,0-22.192-11.121-22.192-24.791V39.587c0-13.67,9.956-24.792,22.192-24.792
+                                h99.849c6.649,0,12.039,5.39,12.039,12.039s-5.39,12.039-12.039,12.039h-97.9c-0.039,0.204-0.064,0.443-0.064,0.715v194.496
+                                c0,0.271,0.025,0.51,0.064,0.714h195.801c0.039-0.204,0.064-0.442,0.064-0.714v-97.246c0-6.648,5.39-12.039,12.038-12.039
+                                c6.649,0,12.039,5.39,12.039,12.039v97.246C245.204,247.753,235.248,258.874,223.012,258.874z"/>
+                            <g>
+                                <polygon fill="#231F20" points="135.429,137.726 122.275,124.57 221.126,25.719 195.407,0 260,0 260,13.156 260,64.593 
+                                    234.281,38.875 		"/>
+                            </g>
+                        </g>
+                        </svg>
+                        </a>
+                </h1>
+                <h2>An effortless playlist generator</h2>
+                
+                <p class="intro">Next. is a playlist generator designed to take the stress away from choosing the right song. An intentionally paired back interface presents the viewer with a balance of control and restraint. The webpage is limited to a small selection of tracks and the project serves as a demonstration of UI and development skills.</p>
+                <img src="img/next/next_deliverable_playing.jpg" alt="The play screen of 'Next.' which is the main experience">
+                
+                <h1>Design process</h1>
+                <p>A number of wireframes were considered each focusing on different aspects of the user experience. The three concepts were based around either; the current playing track (Focused), a small selection of upcoming options (Light), or a lot of information and choice (Rich). Pictured below are the two concepts &lsquo;Focused&rsquo; and &lsquo;Rich&rsquo;.</p>
+                <img src="img/next/next_wireframe_focused.jpg" alt="A wireframe of the project more focused on what is currently playing">
+                <img src="img/next/next_wireframe_rich.jpg" alt="A rich wireframe of the proejct">
+                <p>Below is the chosen wireframe, &lsquo;Light&rsquo;, which was most aligned with the original vision. The &lsquo;Light&rsquo; concept put the most emphasis on upcoming track options. Next. is designed as a tool that will disappear into the background of social settings making song selection a simple task, by displaying a selection of 4-6 songs the user has an amount of control without an overwhelming choice.</p>
+                <img src="img/next/next_wireframe_simplified.jpg" alt="A light-weight wireframe of the project focused on upcoming song options">
+                <p>The last step before development was to produce a render to work from. This process allows for experimentation with type and scale to find visual balance. Often changes are made on the fly while developing however starting with a high resolution render keeps the project focused and moving in the right direction.</p>
+                <img src="img/next/next_render_light.jpg" alt="An early render of the light-weight wireframe">
+                
+                <h1>Development process</h1>
+                <p>As Next. is simply a prototype all that was required for development was HTML, CSS and jQuery. The two most complex parts of the project are the search functionality and the player itself. Search functionality is the only plugin used in the project (<a href="http://easyautocomplete.com/guide" target="_blank">EasyAutocomplete</a> by Łukasz Pawełczak) which suggests options of artists or track names. The result of the search is then compared to a list of options in HTML which contain custom attributes the jQuery uses to source audio files. The audio tag is hidden in favour of completely customised controls. Audio functionality is thanks to a helpful post by Sabeer Shaikh for <a href="https://www.eduonix.com/blog/web-programming-tutorials/learn-build-audio-player-using-html5/" target="_blank">Eduonix</a>.</p>
+                <img src="" alt="Development image">
+                <p>The fully functional prototype can be viewed <a href="https://joshuaryaan.github.io/Next./" target="_blank">here</a>. Below are a series of images displaying the functionality of the fully scalable product. The biggest learning curve for the project was the use of jQuery to manipulate or customise native HTML elements. A simple design at the outset eventually led to a few weeks of wrangling snippets of code until they worked together to create a seamless prototype.</p>
+                <img src="img/next/next_deliverable_search.jpg" alt="The home page of 'Next.' with a search box asking for a song or artist">
+                <img src="img/next/next_deliverable_playing.jpg" alt="The play screen or 'Next.' which is the main experience">
+                <img src="img/next/next_deliverable_menu.jpg" alt="The menu, hidden away behind the interface">
+                <img src="img/next/next_deliverable_mobile.jpg" alt="Mobile of the complete 'Next.' interface">
+                <img src="img/next/next_deliverable_interface.gif" alt="An animation of the complete 'Next.' interface">
+                <ul class="full">
+                    <li>
+                        <a href="https://www.behance.net/joshwarnerco" target="_blank" class="button">Behance</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/p/BbsYXBdgeCw/?taken-by=joshwarner.co" target="_blank" class="button">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/joshwarner.co/" target="_blank" class="button">View Project</a>
+                    </li>
+                </ul>
+            </article>
+
+        </div>
+    </div>
+    
+</body>
+
+</html>
