@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    $('body').css('display', 'none');
+    $('body').fadeIn(400);
+    
     //Tease image overlay for 1sec after page load
     setTimeout(function(){
         $("section .overlay").removeClass("tease");
