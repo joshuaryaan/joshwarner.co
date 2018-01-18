@@ -1,7 +1,9 @@
-$(document).ready(function() {
+$(window).load(function(){
+    $("body").css('display', 'none');
+    $("body").fadeIn(400);
+});
 
-    $('body').css('display', 'none');
-    $('body').fadeIn(400);
+$(document).ready(function() {
     
     //Tease image overlay for 1sec after page load
     setTimeout(function(){
@@ -29,16 +31,16 @@ $(document).ready(function() {
     });
 
     //Hide all sections except the top two
-    $('section').css( "opacity", "0" );
-    $('section:nth-of-type(1)').css( "opacity", "1" ); //Replace this line with 'if element above fold'
-    $('section:nth-of-type(2)').css( "opacity", "1" );
+    $("section").css( "opacity", "0" );
+    $("section:nth-of-type(1)").css( "opacity", "1" ); //Replace this line with 'if element above fold'
+    $("section:nth-of-type(2)").css( "opacity", "1" );
     
     //Fade in on scroll
     //Credit to Anna Larson - https://codepen.io/annalarson/pen/GesqK
     //Edited by Josh Warner
     $(window).scroll( function(){
         /* Check the location of each desired element */
-        $('section').each( function(i){
+        $("section").each( function(i){
             var middle_of_object = $(this).position().top + $(this).outerHeight()/2;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             /* If the object is half visible in the window, fade it it */
