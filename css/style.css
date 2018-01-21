@@ -64,17 +64,17 @@ img {
     display: inline-block;
 }
 
-.button {
+.link-bank a {
     float: left;
     font-size: 13px;
     font-weight: 300;
     letter-spacing: 0.4px;
     text-decoration: none;
     padding: 10px 2px;
-    margin: 0 6px 0 0;
+    margin: 0 8px 0 0;
 }
 
-.button::after {
+.link-bank a::after {
     content: '';
     display: block;
     width: 0;
@@ -85,7 +85,7 @@ img {
     transition: width 400ms;
 }
 
-.button:hover::after {
+.link-bank a:hover::after {
     width: 100%;
         -webkit-transition: width 400ms;
     transition: width 400ms;
@@ -350,6 +350,10 @@ article ul.full li {
         width: 100%;
     }
     
+    .link-bank a::after {
+        width: 100%;
+    }
+    
     .credit {
         display: none;
     }
@@ -367,7 +371,7 @@ article ul.full li {
     
     .content {
         width: 100%;
-        margin: 0 auto 0 auto;
+        margin: 0 auto 64px auto;
     }
     
     section {
