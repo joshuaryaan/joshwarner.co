@@ -9,6 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112776333-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112776333-1');
+    </script>
 </head>
 
 <body>
@@ -52,26 +61,26 @@
                 <h2>An effortless playlist generator</h2>
                 
                 <p class="intro">Next. is a playlist generator designed to take the stress away from choosing the right song. An intentionally paired back interface presents the viewer with a balance of control and restraint. The webpage is limited to a small selection of tracks and the project serves as a demonstration of UI and development skills.</p>
-                <img src="img/next/next_deliverable_playing.jpg" alt="The play screen of 'Next.' which is the main experience">
+                <img src="img/next_deliverable_playing.jpg" alt="The play screen of 'Next.' which is the main experience">
                 
                 <h1>Design process</h1>
                 <p>A number of wireframes were considered each focusing on different aspects of the user experience. The three concepts were based around either; the current playing track (Focused), a small selection of upcoming options (Light), or a lot of information and choice (Rich). Pictured below are the two concepts &lsquo;Focused&rsquo; and &lsquo;Rich&rsquo;.</p>
-                <img src="img/next/next_wireframe_focused.jpg" alt="A wireframe of the project more focused on what is currently playing">
-                <img src="img/next/next_wireframe_rich.jpg" alt="A rich wireframe of the proejct">
+                <img src="img/next_wireframe_focused.jpg" alt="A wireframe of the project more focused on what is currently playing">
+                <img src="img/next_wireframe_rich.jpg" alt="A rich wireframe of the proejct">
                 <p>Below is the chosen wireframe, &lsquo;Light&rsquo;, which was most aligned with the original vision. The &lsquo;Light&rsquo; concept put the most emphasis on upcoming track options. Next. is designed as a tool that will disappear into the background of social settings making song selection a simple task, by displaying a selection of 4-6 songs the user has an amount of control without an overwhelming choice.</p>
-                <img src="img/next/next_wireframe_simplified.jpg" alt="A light-weight wireframe of the project focused on upcoming song options">
+                <img src="img/next_wireframe_simplified.jpg" alt="A light-weight wireframe of the project focused on upcoming song options">
                 <p>The last step before development was to produce a render to work from. This process allows for experimentation with type and scale to find visual balance. Often changes are made on the fly while developing however starting with a high resolution render keeps the project focused and moving in the right direction.</p>
-                <img src="img/next/next_render_light.jpg" alt="An early render of the light-weight wireframe">
+                <img src="img/next_render_light.jpg" alt="An early render of the light-weight wireframe">
                 
                 <h1>Development process</h1>
                 <p>As Next. is simply a prototype all that was required for development was HTML, CSS and jQuery. The two most complex parts of the project are the search functionality and the player itself. Search functionality is the only plugin used in the project (<a href="http://easyautocomplete.com/guide" target="_blank">EasyAutocomplete</a> by Łukasz Pawełczak) which suggests options of artists or track names. The result of the search is then compared to a list of options in HTML which contain custom attributes the jQuery uses to source audio files. The audio tag is hidden in favour of completely customised controls. Audio functionality is thanks to a helpful post by Sabeer Shaikh for <a href="https://www.eduonix.com/blog/web-programming-tutorials/learn-build-audio-player-using-html5/" target="_blank">Eduonix</a>.</p>
-                <img src="img/next/next_development.jpg" alt="Using an unordered list to assign track meta data">
+                <img src="img/next_development.jpg" alt="Using an unordered list to assign track meta data">
                 <p>The fully functional prototype can be viewed <a href="https://joshuaryaan.github.io/Next./" target="_blank">here</a>. Below are a series of images displaying the functionality of the fully scalable product. The biggest learning curve for the project was the use of jQuery to manipulate or customise native HTML elements. A simple design at the outset eventually led to a few weeks of wrangling snippets of code until they worked together to create a seamless prototype.</p>
-                <img src="img/next/next_deliverable_search.jpg" alt="The home page of 'Next.' with a search box asking for a song or artist">
-                <img src="img/next/next_deliverable_playing.jpg" alt="The play screen or 'Next.' which is the main experience">
-                <img src="img/next/next_deliverable_menu.jpg" alt="The menu, hidden away behind the interface">
-                <img src="img/next/next_deliverable_mobile.jpg" alt="Mobile views of the complete 'Next.' interface">
-                <img src="img/next/next_deliverable_interface.gif" alt="An animation of the complete 'Next.' interface">
+                <img src="img/next_deliverable_search.jpg" alt="The home page of 'Next.' with a search box asking for a song or artist">
+                <img src="img/next_deliverable_playing.jpg" alt="The play screen or 'Next.' which is the main experience">
+                <img src="img/next_deliverable_menu.jpg" alt="The menu, hidden away behind the interface">
+                <img src="img/next_deliverable_mobile.jpg" alt="Mobile views of the complete 'Next.' interface">
+                <img src="img/next_deliverable_interface.gif" alt="An animation of the complete 'Next.' interface">
                 
                 <div class="link-bank">
                     <h3>Connect&#58;</h3>

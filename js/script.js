@@ -1,8 +1,3 @@
-$(window).load(function(){
-    $("body").css('display', 'none');
-    $("body").fadeIn(400);
-});
-
 $(document).ready(function() {
     
     //Tease image overlay for 1sec after page load
@@ -50,4 +45,5 @@ $(document).ready(function() {
         }); 
     });
     // End credit
+    
 });
