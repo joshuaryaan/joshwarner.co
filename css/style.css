@@ -37,14 +37,14 @@ h4 {
     font-size: 13px;
     font-weight: 300;
     line-height: 22px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.6px;
     margin: 0;
 }
 
 p {
     font-size: 13px;
-    line-height: 22px;
-    letter-spacing: 0.3px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
     margin: 0;
 }
 
@@ -71,6 +71,7 @@ img {
 
 .link-bank {
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .link-bank a {
@@ -129,8 +130,8 @@ header svg:hover {
 
 header nav {
     font-weight: 400;
-    font-size: 0.9em;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
+    
 }
 
 header nav a {
@@ -197,12 +198,11 @@ section {
     position: relative;
     margin-bottom: 70px;
     border-radius: 4px;
-    overflow: hidden;
 }
 
-section:last-of-type {
+/*section:last-of-type {
     margin-bottom: 0;
-}
+}*/
 
 section .overlay {
     position: absolute;
@@ -251,6 +251,53 @@ section .overlay p {
     transition: width 400ms;
 }
 
+.cta {
+    position: relative;
+    width: 100%;
+    background-color: #1d1d1d;
+    opacity: 0.94;
+    border: none;
+    border-radius: 4px;
+    padding: 22px 30px 33px 30px;
+        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    z-index: 2;
+}
+
+.cta a {
+    text-decoration: none;
+}
+
+.cta h1 {
+    color: #eaeaea;
+}
+
+.cta p {
+    position: absolute;
+    color: #808080;
+    margin: 0;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.cta p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #808080;
+        -webkit-transition: width 400ms;
+    transition: width 400ms;
+}
+
+.cta:hover p::after {
+    width: 100%;
+        -webkit-transition: width 400ms;
+    transition: width 400ms;
+}
+
 article {
     margin-top: -8px;
     display: inline-block;
@@ -275,7 +322,12 @@ article h1 .link path, polygon {
 }
 
 article h1 .link:hover polygon {
-    transform: translate(10px,-10px);  
+    transform: translate(10px,-10px); 
+    fill: #5a7d3d;
+}
+
+article h1 .link:hover path { 
+    fill: #5a7d3d;
 }
 
 article .intro {
@@ -380,7 +432,7 @@ article ul.full li {
     
     .content {
         width: 100%;
-        margin: 0 auto 64px auto;
+        margin: 0 auto 0 auto;
     }
     
     section {
@@ -388,7 +440,7 @@ article ul.full li {
         border-radius: 0;
     }
     
-    section .overlay {
+    section .overlay, .cta {
         border-radius: 0;
     }
     
@@ -398,6 +450,18 @@ article ul.full li {
     
     section:last-of-type {
         margin-bottom: 0;
+    }
+    
+    .cta h1, .cta h2 {
+        padding: 0
+    }
+    
+    .cta p {
+        padding: 0;
+    }
+    
+    .cta p::after {
+        width: 100%;
     }
     
     article ul, article ul.half, article ul.full {
