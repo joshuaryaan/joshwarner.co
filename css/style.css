@@ -71,7 +71,7 @@ img {
 
 .link-bank {
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .link-bank a {
@@ -303,12 +303,6 @@ article {
     display: inline-block;
 }
 
-.module {
-    background-color: none;  
-    margin-bottom: 20px;
-    padding: 0;     
-}
-
 article h1 .link {
     width: 12px;
     margin: -6px -6px -6px 0;
@@ -331,7 +325,7 @@ article h1 .link:hover path {
 }
 
 article .intro {
-    margin: 10px 0 20px 0;
+    margin: 0px 0 20px 0;
 }
 
 article p {
@@ -463,27 +457,6 @@ article ul.full li {
     article ul, article ul.half, article ul.full {
         clear: both;
         width: 100%;
-    }
-    
-    .module {
-        background-color: #1d1d1d;  
-        padding: 50px 0;
-    }
-    
-    .module h1 {
-        color: white;
-    }
-    
-    .module * {
-        margin: 25px 0;
-    }
-    
-    .module *:first-child {
-        margin-top: 0;
-    }
-    
-    .module *:last-child {
-        margin-bottom: 0;
     }
 
     article ul.full li {
