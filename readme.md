@@ -6,8 +6,8 @@ A digital portfolio of web design and development. The self written brief for th
 
 **Josh Warner** 23/01/2018
 
-* [Home](http://joshwarner.co/)
-* [About](http://joshwarner.co/about)
+* [Home](https://joshuaryaan.github.io/joshwarner.co/index.html)
+* [About](https://joshuaryaan.github.io/joshwarner.co/about)
 
 * [Instagram](https://www.instagram.com/joshwarner.co)
 * [Behance](https://www.behance.net/joshwarnerco)
